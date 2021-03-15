@@ -1,14 +1,13 @@
-#include <Windows.h>
+#include "native_helper_crt.hpp"
 
-
-__declspec(dllexport) auto create_overlay() -> HWND
+auto create_overlay() -> HWND
 {
 	auto window = FriendlyRendering::Window::CreateOverlayWindow();
 	
 	return static_cast<HWND>(window->Handle.ToPointer());
 }
 
-__declspec(dllexport) auto get_process_id(const wchar_t* name) -> DWORD
+auto get_process_id(const wchar_t* name) -> DWORD
 {
 	System::String^ process_name = gcnew System::String(name);
 
