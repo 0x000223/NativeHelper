@@ -12,9 +12,9 @@ auto create_overlay(const wchar_t* text_name) -> HWND
 	MARGINS margins
 	{
 		margins.cxLeftWidth	= -1,
-		margins.cxRightWidth = -1,
-		margins.cyBottomHeight = -1,
-		margins.cyTopHeight = -1,
+		margins.cxRightWidth 	= -1,
+		margins.cyBottomHeight 	= -1,
+		margins.cyTopHeight 	= -1,
 	};
 
 	DwmExtendFrameIntoClientArea(window_handle, &margins);
