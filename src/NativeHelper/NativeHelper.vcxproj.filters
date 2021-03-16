@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="native_helper_crt.cpp">
+    <ClCompile Include="native_helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="native_helper_crt.hpp">
+    <ClInclude Include="include.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
